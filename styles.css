@@ -25,8 +25,9 @@ button {
   transition: all 0.3s ease-in-out;
 }
 button:hover {
-  transform: scale(1.05);
-  background-color: #4338ca;
+   background-color: #facc15; 
+  color: #111827;            
+  transform: scale(1.05); 
 }
 
 /* Header and Navbar */
@@ -55,7 +56,10 @@ nav h2 {
 }
 .banner button {
   margin-top: 20px;
+
 }
+
+
 
 /* Action Section */
 .action {
@@ -86,6 +90,11 @@ nav h2 {
   color: #fff;
   border-radius: 8px;
 }
+.action button:hover {
+   background-color: #facc15; 
+  color: #111827;            
+  transform: scale(1.05); 
+}
 .action img {
   max-width: 420px;
   width: 100%;
@@ -111,7 +120,7 @@ nav h2 {
 .stats {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 60px;
   flex-wrap: wrap;
 }
 .stats div {
@@ -123,7 +132,7 @@ nav h2 {
 }
 .stats h3 {
   color: #4f46e5;
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 5px;
 }
@@ -219,21 +228,57 @@ nav h2 {
 
 /* Focus Section */
 .focus {
+  background-color: #f6f8ff; /* Light background */
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.focus-content {
   background: white;
-  text-align: center;
-  padding: 60px 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  margin: 40px auto;
-  max-width: 900px;
   border-radius: 20px;
+  padding: 60px 30px;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
-.focus h2 {
-  margin-bottom: 20px;
+
+.focus-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111827;
 }
-.focus img {
+
+.focus-content p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.focus-content button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: #4f46e5;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.focus-content button:hover {
+  background-color: #facc15; /* Yellow on hover */
+  color: #111827;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(250, 204, 21, 0.3);
+}
+
+.focus-content img {
   max-width: 100%;
-  border-radius: 15px;
-  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 /* Contact Section */
@@ -309,19 +354,63 @@ nav h2 {
 }
 
 .contact-form button:hover {
-  background-color: #4338ca;
+  background-color:  #facc15;
+  color: #111827;            
+  transform: scale(1.05); 
+
 }
 
 /* Footer Section */
 footer {
   text-align: center;
   background-color: #fff;
+  padding: 60px 20px;
   color: #4f46e5;
-  padding: 40px 20px;
-  font-weight: bold;
 }
-.footer-links a {
-  margin: 0 10px;
+
+.footer-logo {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
   color: #4f46e5;
-  font-weight: normal;
+}
+
+.footer-subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  font-size: 1rem;
+  color: #6b7280;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #4f46e5;
+}
+
+.logo-with-image {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-with-image img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
