@@ -139,11 +139,15 @@ nav h2 {
 }
 .feedback h2 {
   font-size: 1.8rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #111827;
 }
-.feedback p {
-  color: #555;
+.feedback > p {
+  color: #6b7280;
+  font-size: 1rem;
 }
+
 .review-grid {
   display: flex;
   justify-content: center;
@@ -151,24 +155,66 @@ nav h2 {
   margin-top: 30px;
   flex-wrap: wrap;
 }
+
 .review-box {
   background: white;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 16px;
+  padding: 24px;
   max-width: 300px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
 }
-.review-box img {
+
+/* Stars styling */
+.review-box .stars {
+  color: #fbbf24; /* Tailwind's yellow-400 */
+  font-size: 1.1rem;
+}
+
+/* Heading inside review */
+.review-box h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 4px 0;
+}
+
+/* Quoted testimonial text */
+.review-box .review-text {
+  font-size: 0.95rem;
+  color: #374151;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Reviewer info section */
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.reviewer img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  vertical-align: middle;
-  margin-right: 10px;
 }
-.stars {
-  color: gold;
-  font-size: 1rem;
+
+.reviewer strong {
+  color: #111827;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.reviewer small {
+  color: #6b7280;
+  font-size: 0.8rem;
+  line-height: 1.2;
 }
 
 /* Focus Section */
