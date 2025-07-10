@@ -95,13 +95,18 @@ nav h2 {
 
 /* Productive Users Section */
 .productive {
-  background-color: #e5e7eb;
+  background-color:  #e0e4ff;
   text-align: center;
   padding: 60px 20px;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
 }
 .productive h2 {
   margin-bottom: 40px;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111827;
 }
 .stats {
   display: flex;
@@ -110,12 +115,21 @@ nav h2 {
   flex-wrap: wrap;
 }
 .stats div {
-  background: white;
-  padding: 20px;
+  background: transparent;
+  padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  flex: 1 1 150px;
+  text-align: center;
   max-width: 200px;
+}
+.stats h3 {
+  color: #4f46e5;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.stats p {
+  color: #6b7280;
+  font-size: 0.95rem;
 }
 
 /* Feedback Section */
