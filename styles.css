@@ -1,10 +1,9 @@
-/* Reset and global styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
 body {
   line-height: 1.6;
   background-color: #f6f8ff;
@@ -180,7 +179,7 @@ nav h2 {
 
 /* Stars styling */
 .review-box .stars {
-  color: #fbbf24; /* Tailwind's yellow-400 */
+  color: #fbbf24; 
   font-size: 1.1rem;
 }
 
@@ -228,7 +227,7 @@ nav h2 {
 
 /* Focus Section */
 .focus {
-  background-color: #f6f8ff; /* Light background */
+  background-color: #f6f8ff; 
   padding: 80px 20px;
   display: flex;
   justify-content: center;
@@ -269,7 +268,7 @@ nav h2 {
 }
 
 .focus-content button:hover {
-  background-color: #facc15; /* Yellow on hover */
+  background-color: #facc15; 
   color: #111827;
   transform: translateY(-2px) scale(1.05);
   box-shadow: 0 8px 20px rgba(250, 204, 21, 0.3);
@@ -291,7 +290,7 @@ nav h2 {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
-  align-items: center; /* vertical center */
+  align-items: center; 
   justify-content: space-between;
   gap: 60px;
   flex-wrap: wrap;
